@@ -10,7 +10,7 @@
 
 
 # role-based syntax
-server '123.45.67.89', user: 'root', roles: %w{app web db}
+server '172.31.4.109', user: 'root', roles: %w{app web db}
 
 # Defines a role with one or multiple servers. The primary server in each
 # group is considered to be the first unless any hosts have the primary
@@ -61,6 +61,6 @@ server '123.45.67.89', user: 'root', roles: %w{app web db}
 #   }
 
 
-role :app, %w{root@123.45.67.89}
-role :web, %w{root@123.45.67.89}
-role :db,  %w{root@123.45.67.89}
+role :app, %w{root@172.31.4.109}
+role :web, %w{root@172.31.4.109}
+role :db,  %w{root@172.31.4.109}

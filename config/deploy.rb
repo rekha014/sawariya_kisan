@@ -1,9 +1,11 @@
 # config valid only for current version of Capistrano
 lock "3.7.2"
 
-set :application, "my_app_name"
-set :repo_url, "git@example.com:me/my_repo.git"
-
+set :application, 'sawariya_kisan'
+set :repo_url, 'git@github.com:rekha014/sawariya_kisan.git'
+set :branch, 'master'
+set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
+set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 

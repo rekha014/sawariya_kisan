@@ -9,6 +9,10 @@
   </head>
 
   <body>
+  <div class="body-inner">
+     <%= render :partial => 'layouts/header'%>
     <%= yield %>
+     <%= render :partial => 'layouts/footer'%>
+   </div>
   </body>
 </html>

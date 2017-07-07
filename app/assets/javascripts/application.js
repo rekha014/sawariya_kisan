@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require bootstrap.min
+//= require owl.carousel
+//= require jquery.prettyPhoto
+//= require jquery.bxslider.min
+//= require jquery.isotope.min
+//= require wow.min
+//= require smoothscroll
+//= require jquery.easy-pie-chart
+//= require custom
