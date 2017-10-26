@@ -1,0 +1,95 @@
+
+	<div id="inner-header">
+		<img src="../assets/banner4-b2b9610a35e54491a3c2dd279be3289ec198c716c6d5edabe5c3cb6f7787606f.jpg" alt ="" />
+	</div>
+
+	<!-- Subpage title start -->
+	<section id="inner-title">
+	    <div class="container">
+	      <div class="row">
+	        <div class="col-md-12">
+	        	<div class="inner-title-content">
+		        	<h2>Contact</h2>
+		        	<ul class="breadcrumb">
+			            <li> <a href="#">Home </a></li>
+			            <li><a href="#"> Contact</a></li>
+		          	</ul>
+	          	</div>
+	        </div>
+	      </div>
+	    </div>
+	 </section>
+	<!-- Subpage title end -->
+
+	<div class="gap-40"></div>
+
+
+	<!-- Contact page start -->
+	<section id="Contact-page">
+		<div class="container">
+			<div class="row">
+
+				<!-- Map start here -->
+				<div class="map" id="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.7969897921544!2d75.28193145018837!3d23.4316995346726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963f585eb140e53%3A0x233460eff07c4eb!2sSawariya+Agritech+Pvt.+Ltd.!5e0!3m2!1sen!2sin!4v1508940290761" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<!-- Map end here -->
+
+				<!-- Contact form start -->
+				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+					<div class="contact-form">
+						<%= form_for @message, :class=>"contact", url: contact_path do |message_form| %>
+						<h3>Contact us</h3>
+						
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<%= message_form.text_field :name, :class=> "form-control", placeholder: "Enter name" %>
+									
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<%= message_form.email_field :email, :class=>"form-control", placeholder: "Enter email"%>
+										
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<%= message_form.text_area :subject, :class=> "form-control", placeholder: "subject"%>
+										
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+							<%= message_form.text_area :message, :class=> "form-control", :rows => "8", placeholder: "Message"%>
+								
+							</div>
+							<div><br>
+							<button class="btn btn-primary" type="submit">Send Message</button> 
+							</div>
+						
+						<% end %>
+					</div><!-- Contact form end -->	
+				</div> <!-- Col end -->
+
+				<!-- sidebar start -->
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<div class="contact-info">
+		    		<h3>Contact Info</h3>
+		    		<p>Our company mission is to manufacture the best organic products.</p>
+		    		<br>
+		    		<p><i class="fa fa-home"></i> 247/11,Nirmal Nagar(Near Nagar Palika),Khachrod,dist.Ujjain(M.P) </p>
+					<p><i class="fa fa-phone"></i>  8989220031 </p>
+					<p><i class="fa fa-envelope-o"></i>  sawariyaagritech@gmail.com</p>
+					<p><i class="fa fa-globe"></i>  www.sanwariyakisanbazar.com</p>
+		    		</div>
+				</div><!-- sidebar end -->
+    		</div><!--/ row end -->
+		</div><!--/ container end -->
+	</section>
+	<!-- Faq page end -->
+
+
+
+
